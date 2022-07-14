@@ -1,0 +1,58 @@
+{
+  "data": {
+    "title": "Title",
+    "detail": "Text",
+    "isMiniWidget": "false",
+    "songName": "最伟大的作品",
+    "isPause": "true",
+    "isSmallWidget": "false",
+    "isLargeWidget": "false",
+    "isMidWidget": "false",
+    "songAlbum": "/common/album.png",
+    "itemContent": "Jay Zhou"
+  },
+  "actions": {
+    "routerEvent": {
+      "action": "router",
+      "abilityName": "com.example.servicecard.MainAbility",
+      "params": {
+        "message": "add detail"
+      }
+    },
+    "play": {
+      "action": "message",
+      "params": {
+        "mAction": "play"
+      }
+    },
+    "pause": {
+      "action": "message",
+      "params": {
+        "mAction": "pause"
+      }
+    },
+    "play_pre": {
+      "action": "message",
+      "params": {
+        "mAction": "play_pre"
+      }
+    },
+    "play_next": {
+      "action": "message",
+      "params": {
+        "mAction": "play_next"
+      }
+    },
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.MICROPHONE"
+      },
+      {
+        "name": "ohos.permission.READ_MEDIA"
+      },
+      {
+        "name": "ohos.permission.INTERNET"
+      }
+    ]
+  }
+}
